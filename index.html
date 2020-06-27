@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator</title>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="maincontainer">
+        <div class="display">
+            <input type="text" name="inputtext" id="displaytext">
+        </div>
+        <div class="row">
+            <button class="btn btns" style="background-color: white" onclick="clearresult()" >C</button>
+            <button class="btn" onclick="squareit()" >x<sup>2</sup></button>
+            <button class="btn" onclick="cubeit()" >x<sup>3</sup></button>
+            <button class="btn btns" onclick="btnclick('/')" id="/">/</button>
+        </div>
+        <div class="row">
+            <button class="btn" onclick="btnclick('7')" id="7">7</button>
+            <button class="btn" onclick="btnclick('8')" id="8">8</button>
+            <button class="btn" onclick="btnclick('9')"  id="9">9</button>
+            <button class="btn" onclick="btnclick('*')" id="*">*</button>
+        </div>
+        <div class="row">
+            <button class="btn" onclick="btnclick('4')" id="4">4</button>
+            <button class="btn" onclick="btnclick('5')" id="5">5</button>
+            <button class="btn" onclick="btnclick('6')" id="6">6</button>
+            <button class="btn" onclick="btnclick('-')" id="-">-</button>
+        </div>
+        <div class="row">
+            <button class="btn"  onclick="btnclick('1')"id="1">1</button>
+            <button class="btn" onclick="btnclick('2')" id="2"> 2</button>
+            <button class="btn"  onclick="btnclick('3')"id="3">3</button>
+            <button class="btn" onclick="btnclick('+')" id="+">+</button>
+        </div>
+        <div class="row">
+       
+            <button class="btn"  onclick="btnclick('0')"id="0">0</button>
+            <button class="btn"  onclick="btnclick('.')"id="."> .</button>
+            <button class="btn"  onclick="sqt()"id="sqt">sqt</button>
+            <button class="btn"  onclick="getresult()" id="equ" style="background-color: green"> =</button>
+            
+            
+        </div>
+    </div>
+</body>
+</html>
